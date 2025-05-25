@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Labirinto Escolar: O Despertar</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@400;600;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body onload="checkLogin()">
+
+  <div class="welcome-banner" id="welcomeBanner">
+    Bem-vindo, <span id="userNameDisplay"></span>!
+    <button class="logout-btn" onclick="logout()">Sair</button>
+  </div>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <h2>Entrar</h2>
+      <input type="text" id="username" placeholder="Digite seu Email" />
+      <input type="text" id="senha" placeholder="Digite sua Senha" />
+      <button onclick="login()">Entrar</button>
+      
+    </div>
+  </div>
+
+  <header>
+    <h1>Labirinto Escolar: O Despertar</h1>
+    <p>Encare os mistérios e horrores escondidos nos corredores da escola...</p>
+  </header>
+
+  <nav>
+    <a href="#download">Baixar</a>
+    <a href="#descricao">Descrição</a>
+    <a href="#requisitos">Requisitos</a>
+    <a href="#suporte">Suporte</a>
+    <a href="#doacao">Doação</a>
+    <a href="#contato">Contato</a>
+    <a href="#desenvolvedores">Desenvolvedores</a>
+
+  </nav>
+
+  <section id="download">
+    <h2>Baixe o Jogo</h2>
+    <p>Clique no botão abaixo para baixar o Jogo do Labirinto Escolar:</p>
+    <a href="jogo-labirinto-escolar.zip" class="button" download>🔽 Baixar Jogo</a>
+  </section>
+
+  <section id="descricao">
+    <h2>Descrição do Jogo</h2>
+    <p>Você acorda trancado em uma escola abandonada. O relógio corre e há algo à espreita. Resolva os enigmas, fuja do labirinto e sobreviva ao desconhecido.</p>
+    <div class="video-demo">
+      <h3>Assista à Prévia do Jogo</h3>
+      <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="Prévia do Jogo" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="requisitos">
+    <h2>Requisitos Mínimos</h2>
+    <ul>
+      <li>Sistema Operacional: Windows 10 ou superior</li>
+      <li>Processador: Intel i3 ou equivalente</li>
+      <li>Memória RAM: 4GB</li>
+      <li>Armazenamento: 500MB livres</li>
+      <li>Placa de Vídeo: Integrada ou superior</li>
+    </ul>
+  </section>
+
+  <section id="suporte">
+    <h2>Suporte</h2>
+    <p>Está com problemas? Envie um e-mail para <a href="mailto:suporte@labirintoescolar.com">suporte@labirintoescolar.com</a></p>
+  </section>
+
+  <section id="doacao">
+    <h2>Ajude o Projeto</h2>
+    <p>Sobreviveu ao jogo? Nos ajude a manter o pesadelo vivo com uma doação!</p>
+    <a href="https://www.paypal.com" target="_blank" class="button">❤️ Doar via PayPal</a>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <p>Para sugestões ou dúvidas, entre em contato: <a href="mailto:contato@labirintoescolar.com">contato@labirintoescolar.com</a></p>
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <section id="desenvolvedores">
+  <h2>Desenvolvedores</h2>
+  <div class="dev-cards">
+
+    <div class="dev-card">
+      <img src="" alt="Foto do Desenvolvedor 1" />
+      <h3>João Silva</h3>
+      <p>Programador e idealizador do projeto. Responsável pela mecânica e lógica do jogo.</p>
+    </div>
+   
+    <div class="dev-card">
+    <p><h3>Ivanilton Carlos</h3></p>
+  <p><img src="Fotos dos desenvolvedores/Ivanilton/WhatsApp Image 2025-05-16 at 14.34.32.jpeg" alt="Foto do Desenvolvedor 2" /></p> 
+    <p>Responsável pelo banco de dados e integração.</p>
+  <a href="https://www.linkedin.com/in/ivanilton-carlos/" target="_blank" class="button">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  <p></p>
+</div>
+
+    <div class="dev-card">
+      <h3>Antonio Felipe Gomes </h3>
+            <p><img src="Fotos dos desenvolvedores/Antonio Felipe/WhatsApp Image 2025-05-16 at 15.38.32.png" alt="Foto do Desenvolvedor 3" /></p>
+            <p>Analista de Dados</p>
+      <a href="http://www.linkedin.com/in/antonio-felipe-gomes-3b917b222" target="_blank" class="button">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  <p></p>
+ </div>
+
+    <div class="dev-card">
+      <p><h3>José Kleivson da Silva Freitas</h3></p>
+      <p><img src="Fotos dos desenvolvedores/José Kleivson da Silva Freitas/WhatsApp Image 2025-05-18 at 13.16.53.PNG" alt="Foto do Desenvolvedor 4 " /></p>
+      <p>Design dos Puzzles</p>
+    <a href="http://www.linkedin.com/in/kleivson-freitas" target="_blank" class="button">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <p></p> 
+    </div>
+  
+    <div class="dev-card">
+    <p><h3>Ramon Vinicius do Nascimento lucena</h3></p>
+    <p><img src="Fotos dos desenvolvedores/Ramon/WhatsApp Image 2025-05-16 at 14.43.41.png" alt="Foto do Desenvolvedor 5"/></p>
+      <p>Desenvolvedor do Site</p>
+    <a href="https://www.instagram.com/ramonlucena2?igsh=MTEzbzQ5djh5aGw3"target="_blank" class="button">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+  </div>
+
+  <div class="dev-card">
+    <p><h3>Wamberg soares</h3></p>
+    <p><img src="Fotos dos desenvolvedores/Wamberg/WhatsApp Image 2025-05-16 at 14.25.05.png" alt="Foto do Desenvolvedor 6"/></p>
+      <p>Banco de dados</p>
+    <a href="https://www.linkedin.com/in/wamberg-soaress?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank" class="button">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+
+  <div class="dev-card">
+    <p><h3>Yuri Ferreira Vital</h3></p>
+    <p><img src="Fotos dos desenvolvedores/Yuri/WhatsApp Image 2025-05-16 at 14.38.53.png" alt="Foto do Desenvolvedor 7"/></p>
+      <p>Banco de dados</p>
+    <a href="https://www.instagram.com/12hrs53m?igsh=OG44ZGk5NDNxYWlr"target="_blank" class="button">
+      <i class="fab fa-instagram"></i> instagram
+    </a>
+  </div>
+
+  <div class="dev-card">
+    <p><h3>Janary Victor</h3></p>
+    <p><img src="Fotos dos desenvolvedores/Janary Victor/Foto.png" alt="Foto do Desenvolvedor 8"/></p>
+      <p>Criador de Puzzles</p>
+    <a href="https://www.instagram.com/janaryjunior?igsh=MWF2NWNyODRqMGVjcg=="target="_blank" class="button">
+      <i class="fab fa-instagram"></i> instagram
+    </a>
+  </div>
+
+  <div class="dev-card">
+    <p><h3>Rafael Hardman Urtiga da Nobrega</h3></p>
+    <p><img src="Fotos dos desenvolvedores/Rafael Hardman Urtiga da Nobrega/foto.png" alt="Foto do Desenvolvedor 9"/></p>
+      <p>Programar as mecânicas básicas do jogo</p>
+    <a href="https://www.instagram.com/rafaelhardman_?igsh=MXNnNGtsemdubmw0Yw=="target="_blank" class="button">
+      <i class="fab fa-instagram"></i> instagram
+    </a>
+  </div>
+
+  <div class="dev-card">
+    <p><h3>Théo Fernandes</h3></p>
+    <p><img src="Fotos dos desenvolvedores/Théo fernandes/foto.png" alt="Foto do Desenvolvedor 10"/></p>
+      <p>Documentação e game design</p>
+    <a href="https://www.instagram.com/teocf?igsh=MW5vYXRldXM3N3RxbA=="target="_blank" class="button">
+      <i class="fab fa-instagram"></i> instagram
+    </a>
+    <a href="https://www.linkedin.com/in/t%C3%A9o-fernandes-952936328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank" class="button">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+
+  <div class="dev-card">
+    <p><h3>Jhonatha Espinoza</h3></p>
+    <p><img src="Fotos dos desenvolvedores/jonatha Ezpinoza/foto.png" alt="Foto do Desenvolvedor 11"/></p>
+      <p>Desenvolvedor do Site</p>
+    <a href="https://www.instagram.com/teocf?igsh=MW5vYXRldXM3N3RxbA=="target="_blank" class="button">
+      <i class="fab fa-instagram"></i> instagram
+    </a>
+      </div>
+
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Labirinto Escolar: O Despertar. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function checkLogin() {
+      const username = localStorage.getItem("username");
+      if (username) {
+        document.getElementById("userNameDisplay").textContent = username;
+        document.getElementById("welcomeBanner").style.display = "block";
+      } else {
+        document.getElementById("loginModal").style.display = "block";
+      }
+    }
+
+    function login() {
+      const name = document.getElementById("username").value.trim();
+      if (name) {
+        localStorage.setItem("username", name);
+        location.reload();
+      }
+    }
+
+    function logout() {
+      localStorage.removeItem("username");
+      location.reload();
+    }
+  </script>
+</body>
+</html>
